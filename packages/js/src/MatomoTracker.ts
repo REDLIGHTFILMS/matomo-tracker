@@ -178,11 +178,12 @@ class MatomoTracker {
     action,
     name,
     value,
+    userId,
     ...otherParams
   }: TrackEventParams): void {
     if (category && action) {
       this.track({
-        data: [TRACK_TYPES.TRACK_EVENT, category, action, name, value],
+        data: [TRACK_TYPES.TRACK_EVENT, category, action, name, value, userId],
         ...otherParams,
       })
     } else {

@@ -24,6 +24,7 @@ export interface TrackPageViewParams {
   documentTitle?: string
   href?: string | Location
   customDimensions?: boolean | CustomDimension[]
+  userId?: string
 }
 
 export interface TrackParams extends TrackPageViewParams {
